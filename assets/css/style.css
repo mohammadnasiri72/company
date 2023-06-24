@@ -1,0 +1,686 @@
+@font-face {
+    font-family: "Blacksword";
+    src: url("../font/fr13631857_Blacksword.otf");
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* ////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+///////////   header  /////////////
+///////////////////////////////////
+///////////////////////////////////
+//////////////////////////////// */
+header {
+    padding: 0 50px;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 45465465465465;
+    background-color: rgb(100, 100, 100);
+}
+
+.img-logo {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.icon-hamberger-menu {
+    cursor: pointer;
+    display: none;
+    font-size: 35px;
+    z-index: 5465465;
+    transition: 0.6s;
+    position: fixed;
+    left: 90%;
+    color: white;
+}
+
+.box-hamberger-menu {
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    background-color: rgb(145, 145, 145);
+    z-index: 55;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: 0.6s;
+    padding-top: 50px;
+}
+
+.bg-hamberger-menu {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.753);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.6s;
+}
+
+.menu-item-link {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.menu-item-link-responsiv {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+.menu-item-link-responsiv:hover {
+    color: black;
+}
+
+.menu-item-link:hover {
+    color: white;
+}
+
+.contribute-link {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    background-color: white;
+    padding: 10px 20px;
+    transition: 0.6s;
+    border: 2px solid rgb(100, 100, 100);
+}
+
+.contribute-link:hover {
+    color: white;
+    background-color: rgb(100, 100, 100);
+    border: 2px solid white;
+}
+.contribute-link-res {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    background-color: white;
+    border: 2px solid rgb(100, 100, 100);
+    padding: 10px 20px;
+    transition: 0.6s;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.contribute-link-res:hover {
+    color: white;
+    background-color: rgb(100, 100, 100);
+    border: 2px solid white;
+}
+
+/* ////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+///////////  main-page  ///////////
+///////////////////////////////////
+///////////////////////////////////
+//////////////////////////////// */
+.main-page {
+    background-image: url("../img/team2.jpg");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.603);
+    background-blend-mode: multiply;
+    text-align: center;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.title-main-page {
+    color: white;
+    padding-top: 20%;
+    font-size: 65px;
+    width: 60%;
+    margin: auto;
+    font-weight: 700;
+}
+
+.title-main-page2 {
+    color: white;
+}
+
+.input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin: 5px;
+    width: 300px;
+    height: 50px;
+    padding-left: 20px;
+}
+
+.button {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(165, 98, 98);
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.596);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+}
+
+.icon-check {
+    margin-right: 10px;
+    font-size: 35px;
+}
+
+.txt-ch-box {
+    color: white;
+    cursor: pointer;
+}
+
+.icon-shopping {
+    position: absolute;
+    color: white;
+    background-color: brown;
+    font-weight: 100;
+    left: 100%;
+    transition: 0.6s;
+    cursor: pointer;
+    top: 20%;
+    font-size: 40px;
+}
+
+.main-page:hover .icon-shopping {
+    transform: translateX(-100%);
+}
+
+.icon-payments {
+    top: 30%;
+}
+
+.icon-credit_card {
+    top: 40%;
+}
+
+/* ////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+//////////////  team  /////////////
+///////////////////////////////////
+///////////////////////////////////
+//////////////////////////////// */
+.team {
+    margin-top: 50px;
+}
+
+.title-team {
+    text-align: center;
+    font-weight: 600;
+}
+
+.txt-team {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.514);
+}
+
+.box-team {
+    margin-top: 50px;
+}
+
+.icon-vote {
+    text-align: center;
+    color: red;
+    font-size: 65px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title-box-team {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.txt-box-team {
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    font-size: 14px;
+}
+
+.p-link-box-team {
+    text-align: center;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.link-box-team {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 114, 245);
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+
+.link-box-team:hover {
+    color: white;
+    background-color: rgb(82, 82, 228);
+}
+
+.hr {
+    width: 10%;
+    color: red;
+    margin: auto;
+    position: relative;
+    top: -10px;
+    font-weight: 900;
+}
+
+/* ////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+//////////////  video  ////////////
+///////////////////////////////////
+///////////////////////////////////
+//////////////////////////////// */
+.video {
+    background-image: url("../img/young-creative-business-people-meeting-at-office-picture-id1205709428.webp");
+    width: 80%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.486);
+    background-blend-mode: multiply;
+}
+
+.video-box {
+    position: absolute;
+    width: 350px;
+    height: 120px;
+    background-color: rgb(184, 39, 39);
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.6s;
+    transform: scale(1);
+}
+
+.icon-video {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    font-size: 4rem;
+    border: 5px solid rgb(34, 34, 34);
+    color: rgb(196, 196, 196);
+
+}
+
+.title-video-box {
+    color: white;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    font-weight: 600;
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.txt-video-box {
+    color: white;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    white-space: nowrap;
+}
+
+.video-play {
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    margin: auto;
+    transition: 0.6s;
+    transform: scale(0);
+}
+
+.icon-close {
+    position: absolute;
+    color: red;
+    font-size: 45px;
+    cursor: pointer;
+    display: none;
+    z-index: 546546;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+.test{
+    background-image: url("../img/team2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.815);
+    background-blend-mode: multiply;
+}
+
+
+/* ////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+//////////////  timer  ////////////
+///////////////////////////////////
+///////////////////////////////////
+//////////////////////////////// */
+
+.timer {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.take-part {
+    color: blue;
+    font-family: "Blacksword";
+    font-weight: 100;
+    font-size: 45px;
+}
+
+.title-timer {
+    text-align: center;
+}
+
+.txt-timer {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.box-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.day-num {
+    padding: 10px 15px;
+    margin-right: 2px;
+    margin-left: 2px;
+    background-color: white;
+
+}
+
+.txt-day {
+    color: white;
+    text-align: center;
+    background-color: rgb(32, 0, 75);
+    margin: 0 2px;
+}
+
+.box-day {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day {
+    padding: 10px;
+}
+
+.link-timer {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(74, 74, 204);
+    padding: 20px 20px;
+    margin-left: 20px;
+    transition: 0.6s;
+}
+
+.link-timer:hover {
+    color: white;
+    background-color: rgb(39, 39, 136);
+}
+
+.p-link-timer {
+    margin-top: 10px;
+}
+
+/* ////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+//////////////  twitter  //////////
+///////////////////////////////////
+///////////////////////////////////
+//////////////////////////////// */
+
+.twitter {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title-twitter {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+.icon-twitter {
+    color: rgb(87, 87, 236);
+    display: block;
+    cursor: pointer;
+    width: 10px;
+    margin: auto;
+    font-size: 45px;
+}
+
+.txt-twitter {
+    width: 80%;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+/* ////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+//////////////  footer  //////////
+///////////////////////////////////
+///////////////////////////////////
+//////////////////////////////// */
+
+footer{
+    background-color: rgb(80, 80, 80);
+}
+
+.logo-footer {
+    width: 300px;
+    height: 100px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    animation-iteration-count: infinite;
+    object-fit: contain;
+}
+
+.title-about {
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.txt-about {
+    margin-left: 10px;
+    line-height: 10px;
+    cursor: pointer;
+    transition: 0.6s;
+    text-decoration: none;
+    color: white;
+}
+
+.txt-about:hover {
+    color: rgb(118, 118, 207);
+}
+
+.icon-social-media {
+    color: rgb(118, 118, 207);
+    font-size: 45px;
+    padding: 0 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.4s;
+}
+.icon-social-media:hover{
+    transform: rotate(10deg);
+}
+
+.footnote {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(114, 114, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.txt-footnote {
+    color: white;
+}
+
+/* ////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+///////////  responsive  //////////
+///////////////////////////////////
+///////////////////////////////////
+//////////////////////////////// */
+
+@media (max-width: 992px) {
+    .menu-item {
+        display: none;
+    }
+
+    .contribute {
+        display: none;
+    }
+
+    .icon-hamberger-menu {
+        display: block;
+    }
+
+    .box-hamberger-menu {
+        display: block;
+    }
+
+    .title-main-page {
+        font-size: 35px;
+    }
+
+    .title-video-box {
+        font-size: 14px;
+    }
+
+    .txt-video-box {
+        font-size: 12px;
+    }
+
+    .video-box {
+        width: 300px;
+        height: 100px;
+    }
+
+    .icon-video {
+        font-size: 3rem;
+    }
+    .menu-item-link-responsiv{
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .title-video-box {
+        font-size: 18px;
+    }
+
+    .txt-video-box {
+        font-size: 16px;
+    }
+    .menu-item-link-responsiv{
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-video-box {
+        font-size: 14px;
+    }
+
+    .txt-video-box {
+        font-size: 12px;
+    }
+
+    .video-box {
+        width: 250px;
+        height: 70px;
+        left: 40%;
+        top: 40%;
+    }
+
+    .icon-video {
+        font-size: 2rem;
+    }
+    .menu-item-link-responsiv{
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .video-box {
+        left: 30%;
+        top: 30%;
+    }
+    .box-hamberger-menu{
+        width: 50%;
+    }
+    .menu-item-link-responsiv{
+        margin: 5px;
+        padding: 5px;
+    }
+}
